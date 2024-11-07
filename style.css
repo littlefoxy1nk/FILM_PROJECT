@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1, h2, h3 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin: 0px auto;
+    width: 100%;
+    margin-bottom: 70px;
+    display: flex;
+  }
+   /******/
+
+   body {
+    font-family: "Inria Sans", sans-serif;
+    background-color:rgba(25, 27, 32, 1);
+
+    ;
+  }
+
+  /*** header ***/
+  .header .container {
+    background-color:rgba(20, 21, 23, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 180px;
+  }
+
+.bemovie {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.16px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+.bemovie span{
+    color: rgba(204, 0, 0, 1);
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap:29px;
+
+}
+.nav a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.79px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    
+  }
+/* sing up*/
+[data-tab-content]{
+    display: none;
+}
+.active[data-tab-content]{
+    display: block;
+}
+
+
+
+/*stylyser la popup */
+.popup {
+    background-color: rgba(20, 21, 23, 1);
+    color:rgba(255, 255, 255, 1);
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 40px;
+    width: 310px;
+    position: fixed;
+    z-index: 1000;
+    display:none;
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Déplacer l'élément pour le centrer parfaitement */
+}
+.choose {
+font-size: 24px;
+font-weight: 700;
+line-height: 28.78px;
+letter-spacing: 0.03em;
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin-top: 20px;
+
+}
+.tabs {
+    border: 1px solid #FFFFFA;
+    padding: 15px;
+    border-radius: 8px;
+}
+.choose li.active{
+    background-color: rgba(204, 0, 0, 1);
+    border:none;
+
+}
+
+.popup-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: min-content;
+    margin: 20px auto;
+    position: relative;
+    top: 20%;
+
+}
+.close-btn {
+   position: absolute;
+   left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    border-radius: 8px;
+    outline: none; /*bouge les effets de contour */
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input:focus {
+    color: rgba(204, 0, 0, 1);
+}
+
+#submit {
+    padding: 10px 20px ;
+    background-color:rgba(204, 0, 0, 1);
+    color: #FFFFFA;
+    padding: 10px 55px;
+    
+}
+
+
+
+
+/*ligne de recherche */
+  .search .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 275px;
+  }
+
+  .search-input {
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    border : none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 19px;
+
+  }
+
+  .search-button {
+    padding: 14px;
+    background-color:rgba(204, 0, 0, 1);
+    border: none;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right:-15px;
+    top:0;
+  }
+
+  .search-button img {
+   width: 18px;
+  }
+
+ 
+/* formatage des titres*/
+  h2{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.36px;
+    color:rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+    margin-left:100px;
+  }
+  h3{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.36px;
+    color:rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+#ligne {
+    padding: 0;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 1);
+    max-width: 500px;
+   margin-left:300px;
+
+  }
+
+/* research container */
+  .research-film .container {
+    width: 1075px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+/* letest container */
+  .latest-film .container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 1075px;
+ 
+}
+
+
+
+  /*** recherche film par genre ***/
+.genre-film .container {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 1075px;
+}
+
+.nav-genre {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap:29px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.nav-genre a {
+    color: rgba(255, 255, 255, 1);
+    display: inline;
+    font-family:  "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    
+  }
+  .nav-genre a:hover {
+    background-color: rgba(204, 0, 0, 1);
+    padding: 10px ;
+    border-radius: 10px;
+    transition-duration: 0.2;
+  }
+
+/*** footer ***/
+
+.footer .container {
+    background-color:rgba(20, 21, 23, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 180px;
+  }
+
+.bemovie {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.16px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.copyright{
+color:rgba(184, 184, 184, 1);
+font-size: 14px;
+font-weight: 300;
+line-height: 16.79px;
+text-align: left;
+
+}
+
+/* Style global pour les conteneurs Swiper */
+.swiper-container {
+    margin:0 auto;     
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width: 1000px;
+}
+
+
+.swiper-slide{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 26%!important;
+}
+
+.swiper-slide img {
+    width:234px;
+    object-fit: cover; 
+}
+/* Style des boutons de navigation Swiper */
+.swiper-button-next, .swiper-button-prev {
+    width: 40px;              
+    height: 40px;            
+    background-size: contain; /* Ajuste la taille de l'image au conteneur */
+    background-repeat: no-repeat; 
+    background-position: center;      
+    z-index: 10; 
+}
+
+.swiper-button-next {
+    background-image: url('Vector\ \(1\).png');
+    position: absolute;
+    left: -50px;
+
+}
+
+.swiper-button-prev {
+    background-image: url('Vector\ \(2\).png');
+    position: absolute;
+    left:0px ;
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+
+  display: none;
+
+}
+/* Popup principale */
+.popup-film {
+    background-color: rgb(6, 6, 7);
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.popup-film-content{
+    display: grid;
+    grid-template-columns: 240px 1fr; 
+    gap: 50px; 
+    padding: 80px;
+    width: 750px;
+}
+
+/* Conteneur de l'image */
+.image {
+    grid-column: 1; /* Place l'image dans la première colonne */
+    width: 240px;
+    border: 1px solid white;
+}
+
+/* Conteneur du texte */
+.texte {
+    grid-column: 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styles pour la croix*/
+.close-btn {
+    position: absolute;
+    top: 1px;
+    right: 17px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+/* Styles texte */
+#title-film{
+text-transform: uppercase;
+font-size: 20px;
+font-weight: 600;
+line-height: 23.98px;
+letter-spacing: 0.03em;
+color: #CC0000;
+
+}
+#date {
+font-size: 14px;
+font-weight: 600;
+line-height: 16.79px;
+letter-spacing: 0.03em;
+}
+#rate {
+display: inline;
+font-family: "Inter", sans-serif;
+font-size: 20px;
+font-weight: 700;
+line-height: 24.2px;
+color: #CC0000;
+
+}
+#rate img {
+    width: 15px;
+    vertical-align: middle; /* Aligner l'étoile avec le texte */
+}
+#genre{
+    text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;
+line-height: 16.79px;
+letter-spacing: 0.03em;
+}
+#synopsis{
+    
+font-size: 16px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0.03em;
+
+}
+.cast {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.cast #cast {
+
+font-size: 14px;
+font-weight: 700;
+line-height: 16.79px;
+letter-spacing: 0.03em;
+
+
+}
+.cast #people {
+    
+font-size: 14px;
+font-weight: 400;
+line-height: 16.79px;
+letter-spacing: 0.03em;
+margin-left: 6px;
+
+}
+
+/* Description qui apparaît en hover */
+.hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.853); 
+    color: #fff;                    
+    opacity: 0;                     
+    transition: opacity 0.3s ease;  
+}
+.hover-description #title-film{
+font-size: 20px;
+font-weight: 700;
+line-height: 24.2px;
+text-align: center;
+color:rgba(255, 255, 255, 1);
+margin-bottom: 20px;
+
+}
+.hover-description #date {
+font-size: 20px;
+font-weight: 700;
+line-height: 24.2px;
+text-align: center;
+color:rgba(176, 176, 176, 1);
+margin-bottom: 20px;
+}
+.hover-description #genre {
+font-size: 14px;
+font-weight: 500;
+line-height: 16.94px;
+text-align: center;
+margin-bottom: 20px;
+}
+.hover-description #star img{
+    width: 35px;
+   
+}
+.hover-description #star{
+    margin-bottom: 20px;
+}
+
+.hover-description #rate {
+font-size: 32px;
+font-weight: 700;
+line-height: 38.73px;
+text-align: center;
+
+}
+
+.swiper-slide:hover .hover-description {
+    opacity: 1;
+}
+
+
