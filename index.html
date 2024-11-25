@@ -30,7 +30,6 @@
             <li data-tab-target="#sign-up" class="active tabs">SIGNUP</li>
             <li data-tab-target="#register" class="tabs">LOGIN</li>
         </ul>
-        
         <!-- Signup form -->
         <div id="sign-up" data-tab-content class="active">
             <form action="#" class="sign">
@@ -49,178 +48,84 @@
                 <input type="submit" name="submit" id="submit" value="SIGNUP">
             </form>
         </div>
-        
         <!-- Login form -->
         <div id="register" data-tab-content>
             <form action="#" class="sign">
                 <div class="field">
-                    <input type="text" id="username" name="username" placeholder="username">
+                    <input type="text" id="register-username" name="username" placeholder="username">
                 </div>
                 <div class="field">
-                    <input type="password" id="password" name="password" placeholder="Password">
+                    <input type="password" id="register-password" name="password" placeholder="Password">
                 </div>
                 <div class="check">
-                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <input type="checkbox" id="register-checkbox" name="checkbox">
                     <label for="checkbox"> Remember me</label>
                 </div>
-                <input type="submit" name="submit" id="submit" value="SIGNUP">
+                <input type="submit" name="submit" id="register-submit" value="SIGNUP">
            
             </form>
         </div>
     </div>
 </div>
 <!------ end -->
-
-
-<div class="film">
-    
-    <div class="search" id="search">
-        <div class="container">
-            <input type="text" class="search-input" placeholder="Rechercher...">
-            <button class="search-button"><img src="Vector.png" alt="Search"></button>
+    <div class="film">
+        <div class="search" id="search">
+            <div class="container">
+                <input type="text" class="search-input" placeholder="Rechercher...">
+                <button class="search-button"><img src="Vector.png" alt="Search"></button>
+            </div>
         </div>
-    </div>
-
-    <div class="research-film" id="research">
-       <!--div class="container">
-            <h2>Results for <span></span></h2>
-            <div class="swiper swiper-container" id="image-result">
-                <div class="swiper-wrapper">
-                    
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 2"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 3"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
+        <div class="research-film" id="research"></div>
+        <div class="latest-film" id="Latest"></div>
+        <div class="genre-film" id="genre">
+            <div class="container">
+                <h3>Movies by genre</h3>
+                <div class="research-genre">
+                    <ul class="nav-genre">
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Animation</a></li>
+                    </ul>
+                    <div id="ligne"></div>
                 </div>
                 
-               
-            </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        </div>--> 
-     
-    </div>
-
-   
-    <div class="latest-film" id="Latest">
-        <!--<div class="container">
-            <h2>Latest releases</h2>
-            <div class="swiper swiper-container " id="image-latest">
-                <div class="swiper-wrapper">
-                   
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 2"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 3"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                </div>
-    
-        
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>-->
-    </div>
-
-   
-    <div class="genre-film" id="genre">
-      <!--<div class="container">
-            <h3>Movies by genre</h3>
-            <div class="research-genre">
-                <ul class="nav-genre">
-                    <li><a href="#">Comedy</a></li>
-                    <li><a href="#">Drama</a></li>
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Fantasy</a></li>
-                    <li><a href="#">Animation</a></li>
+                <!-- swiper here -->
+            </div>  
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="#" class="bemovie"><span>BE</span>MOVIES</a>
+                <ul class="nav">
+                    <li><a href="#research">SEARCH</a></li>
+                    <li><a href="#Latest">LATEST</a></li>
+                    <li><a href="#genre">GENRES</a></li>
+                    <li><a href="#" class="openSignup">REGISTER</a></li>
+                    <li><a href="#" class="openLoging">SIGNIN</a></li>
                 </ul>
-            <div id="ligne"></div>
-        
-        <h2 id="type-film">TYPE  </h2>
+                <div class="copyright">©2023 - All rights reserved</div>
             </div>
-            <div class="swiper swiper-container" id="image-genre">
-                <div class="swiper-wrapper">
-        
-                    <div class="swiper-slide">
-                        <img src="image1.jpeg" alt="Genre Image 1">
-                        <div class="hover-description">
-                            <p id="title-film"> The godfather</p>
-                            <p id="date"> 1972</p>
-                            <p id="genre"> crime / drame</p>
-                            <p id="star"><img src="Vector-2.png" alt=""> </p>
-                            <p id="rate">8,5</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Genre Image 2"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Genre Image 3"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="image1.jpeg" alt="Image 1"></div>
+        </footer>
+    </div>
+    <div class="popup-film" id="popup-film">
+        <span class="close-film" id="closefilm">&times;</span>
+        <div class="popup-film-content">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="texte">
+                <p id="title-film"></p>
+                <p id="date"></p>
+                <p id="rate"><img src="Vector-2.png" alt=""></p>
+                <p id="genre"></p>
+                <p id="synopsis"></p>
+                <div class="cast">
+                    <p id="cast"> CAST</p>
+                    <p id="people"></p>
                 </div>
-        
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>-->  
-            
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-            <a href="#" class="bemovie"><span>BE</span>MOVIES</a>
-            <ul class="nav">
-                <li><a href="#research">SEARCH</a></li>
-                <li><a href="#Latest">LATEST</a></li>
-                <li><a href="#genre">GENRES</a></li>
-                <li><a href="#" class="openSignup">REGISTER</a></li>
-                <li><a href="#" class="openLoging">SIGNIN</a></li>
-            </ul>
-            <div class="copyright">©2023 - All rights reserved</div>
         </div>
-    </footer>
-</div>
-<div class="popup-film" id="popup-film">
-    <span class="close-film" id="closefilm">&times;</span>
-    <div class="popup-film-content">
-        <div class="image">
-            <img src="image1.jpeg" alt="">
-        </div>
-        
-        <div class="texte">
-            <p id="title-film"> The godfather</p>
-            <p id="date"> 1972</p>
-            <p id="rate"><img src="Vector-2.png" alt=""> 8.7</p>
-            <p id="genre"> crime / drame</p>
-            <p id="synopsis">Spanning the years 1945 to 1955,
-                 a chronicle of the fictional Italian-American Corleone crime family. 
-                 When organized crime family patriarch, Vito Corleone barely survives 
-                 an attempt on his life, his youngest son, Michael steps in to 
-                 take care of the would-be killers, 
-                launching a campaign of bloody revenge.</p>
-            <div class="cast">
-                <p id="cast"> CAST</p>
-                <p id="people">Marlon Brando, Al Pacino, James Caan,
-                    Robert Duval</p>
-            </div>
-           
-        </div>
-    </div>
     </div>
     <!-- Lien de Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
