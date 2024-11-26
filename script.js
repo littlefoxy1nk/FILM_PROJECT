@@ -279,7 +279,7 @@ popupLoginCross.addEventListener("click", () => {
 });
 
 
-// html ids dans le register/login
+
 // demander si les fleches sont aussi liées chez elle
 // pointer sur les images
 // images 100% du parent 
