@@ -350,12 +350,13 @@ text-align: left;
     justify-content: center;
     align-items: center;
     width: 25%;
+    cursor: pointer;
 }
 
 .swiper-slide img {
     width:234px;
     object-fit: cover;
-    cursor: pointer;
+    cursor:pointer;
 }
 /* Style des boutons de navigation Swiper */
 .swiper-button-next, .swiper-button-prev {
@@ -424,15 +425,74 @@ text-align: left;
 
 /* Styles pour la croix*/
 .close-btn {
-    position: absolute;
-    top: 1px;
-    right: 17px;
-    font-size: 24px;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
+text-align: center;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 2px 4px;
+  position: absolute;
+  inset: 0;
+  margin: 16px;
+  content: "";
+  
 }
+.close-btn:hover {
+    cursor: pointer;
+  }
+  .close-btn::after, .close-btn::before {
+    content: "";
+    position: absolute;
+    background-color: #FFF;
+    width: 22px;
+    height: 1px;
+    top: 10px;
+    left: 0px;
+  }
+  .close-btn::after {
+    rotate: 45deg;
+  }
+  .close-btn::before {
+    rotate: -45deg;
+  }
+  
 
 /* Styles texte */
+.close-film {
+    text-align: center;
+      border: 1px solid white;
+      display: inline-block;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      padding: 2px 4px;
+      position: absolute;
+      inset: 0;
+      margin: 16px;
+      content: "";
+      
+    }
+    .close-film:hover {
+        cursor: pointer;
+      }
+      .close-film::after, .close-film::before {
+        content: "";
+        position: absolute;
+        background-color: #FFF;
+        width: 22px;
+        height: 1px;
+        top: 10px;
+        left: 0px;
+      }
+      .close-film::after {
+        rotate: 45deg;
+      }
+      .close-film::before {
+        rotate: -45deg;
+      }
+      
+    
 #title-film{
 text-transform: uppercase;
 font-size: 20px;
@@ -462,7 +522,6 @@ color: #CC0000;
     vertical-align: middle; /* Aligner l'étoile avec le texte */
 }
 #genre{
-    text-transform: uppercase;
 font-size: 14px;
 font-weight: 700;
 line-height: 16.79px;

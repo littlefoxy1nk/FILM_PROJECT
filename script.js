@@ -288,8 +288,5 @@ popupLoginCross.addEventListener("click", () => {
 
 
 // pointer sur les images
-// images 100% du parent 
-// le x dans le movie popUp
-
 
 
