@@ -186,12 +186,12 @@ const genreOnLoad = async () => {
 }
 
 const callByGenre = async (genreID, genre) => {
-    if(moviesByGenre.querySelector(".container")){
-        moviesByGenre.removeChild(moviesByGenre.querySelector(".container"));
-    }
     const response = await fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=primary_release_date.desc&vote_average.gte=0.1&with_genres=${genreID}`, options)
     const myObj = await response.json();
     createSwiper(myObj.results, moviesByGenre,"Results for: " + genre);
+    if(moviesByGenre.querySelector(".container")){
+        moviesByGenre.removeChild(moviesByGenre.querySelector(".container"));
+    }
 };
 
 navGenre.addEventListener("click", (e) => {
