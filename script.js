@@ -261,9 +261,11 @@ loginTabs.forEach(el => {
 const tabs = document.querySelector(".choose").querySelectorAll("li");
 tabs.forEach(tab => {
     tab.addEventListener("click", () => {
-        tabs.forEach(tab => {
-            tab.classList.toggle("active");
-        })
+        if(!tab.classList.contains("active")){
+            tabs.forEach(tab => {
+                tab.classList.toggle("active");
+            })
+        }
     })
 });
 
