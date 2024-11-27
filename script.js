@@ -81,7 +81,7 @@ const displayImages = (movieArr, posterArr, wrapper) => {
                 displayMoviePopUp(movieArr[i], poster_path);
                 popUpFilm.style.display = "block";
             });
-            hoverInfoEvent(slide, movieArr[i]);
+            displayInfo(slide, movieArr[i]);
             slide.appendChild(img);
         }
     }
@@ -219,12 +219,6 @@ navGenre.addEventListener("click", (e) => {
 
 /* ------------------------ HOVER INFO ---------------------------------- */
 
-const hoverInfoEvent = (slide, movie) => {
-    slide.addEventListener("mouseover", (e) => {
-        e.stopPropagation()
-        displayInfo(e.target, movie);
-    })
-};
 const displayInfo = (slide, movie) => {
     const hoverDescription = createNewElement(slide, "div", "class", "hover-description");
     const titleFilm = createNewElement(hoverDescription, "p", "id", "title-film");
