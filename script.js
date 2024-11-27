@@ -182,7 +182,7 @@ window.addEventListener("load", ()=>{
 const genreOnLoad = async () => {
     const response = await fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=primary_release_date.desc&vote_average.gte=0.1&with_genres=35`, options)
     const myObj = await response.json(); 
-    createSwiper( myObj.results, moviesByGenre,"Results for: Comedy");
+    createSwiper( myObj.results, moviesByGenre,"Comedy");
 }
 
 const callByGenre = async (genreID, genre) => {
@@ -285,8 +285,4 @@ popupLoginCross.addEventListener("click", () => {
     document.querySelector(".film").style.filter = "blur(0px)"
 });
 
-
-
 // pointer sur les images
-
-
