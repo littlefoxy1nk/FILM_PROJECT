@@ -221,6 +221,7 @@ navGenre.addEventListener("click", (e) => {
 
 const hoverInfoEvent = (slide, movie) => {
     slide.addEventListener("mouseover", (e) => {
+        e.stopPropagation()
         displayInfo(e.target, movie);
     })
 };
@@ -280,14 +281,9 @@ popupLoginCross.addEventListener("click", () => {
 
 
 
-// demander si les fleches sont aussi liées chez elle
 // pointer sur les images
 // images 100% du parent 
 // le x dans le movie popUp
-// hover sur le nav(?)
-// fleches blanche, gauche
-// pas vraiment 4 images par swiper
-// ajouter une class en css pour check les elements de films par genre
 
-//  pour moi : ajouter un classe pour toggle login/register dans le pop up
+
 

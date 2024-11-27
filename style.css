@@ -77,6 +77,12 @@ ul {
     text-align: left;
     
   }
+.nav a:hover{
+    background-color: rgba(204, 0, 0, 1);
+    padding: 10px ;
+    border-radius: 10px;
+    transition-duration: 0.2;
+}
 /* sing up*/
 [data-tab-content]{
     display: none;
@@ -342,7 +348,8 @@ text-align: left;
 
 .swiper-slide img {
     width:234px;
-    object-fit: cover; 
+    object-fit: cover;
+    cursor: pointer;
 }
 /* Style des boutons de navigation Swiper */
 .swiper-button-next, .swiper-button-prev {
