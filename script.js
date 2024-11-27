@@ -217,6 +217,16 @@ navGenre.addEventListener("click", (e) => {
     }
 });
 
+const navGenreList = document.querySelector(".nav-genre").querySelectorAll("li");
+navGenreList.forEach(tab => {
+    tab.addEventListener("click", () => {
+        if(!tab.classList.contains("genre-checked")){
+            navGenreList.forEach(tab => tab.classList.remove("genre-checked"));
+            tab.classList.add("genre-checked")
+        }
+    })  
+})
+
 /* ------------------------ HOVER INFO ---------------------------------- */
 
 const displayInfo = (slide, movie) => {

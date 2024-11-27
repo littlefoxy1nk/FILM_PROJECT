@@ -282,22 +282,27 @@ input:focus {
     margin-bottom: 40px;
 
 }
-.nav-genre p {
+.nav-genre li {
     color: rgba(255, 255, 255, 1);
     display: inline;
     font-family:  "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
-    
   }
-  .nav-genre p:hover {
+  .nav-genre li:hover {
     background-color: rgba(204, 0, 0, 1);
     padding: 10px ;
     border-radius: 10px;
     transition-duration: 0.2;
+    cursor: pointer;
   }
 
+.genre-checked {
+    background-color: #CC0000;
+    border-radius: 10px;
+    padding: 10px ;
+}
 /*** footer ***/
 
 .footer .container {
