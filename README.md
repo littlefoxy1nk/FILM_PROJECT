@@ -31,7 +31,7 @@ TMDB API for real-time movie data
 ​⏸️​ Add a short movie preview for an immersive experience   
 
 ## ​💻​ try it 
-try it now by following this link: [FILM Project](https://littlefoxy1nk.github.io/film-project/) 🍿
+try it now by following this link: [FILM Project](https://littlefoxy1nk.github.io/FILM_PROJECT/) 🍿
 
 
 
